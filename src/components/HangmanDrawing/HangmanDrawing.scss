@@ -1,6 +1,7 @@
 $bg-color: #000000;
 
 .hangman-drawing-container {
+  margin-top: 20px;
   position: relative;
 
   .head,
@@ -86,7 +87,7 @@ $bg-color: #000000;
   }
 
   .main {
-    height: 400px;
+    height: 300px;
     width: 10px;
     background-color: $bg-color;
     margin-left: 120px;
