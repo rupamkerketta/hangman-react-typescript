@@ -1,0 +1,100 @@
+$bg-color: #000000;
+
+.hangman-drawing-container {
+  position: relative;
+
+  .head,
+  .body,
+  .right-arm,
+  .left-arm,
+  .right-leg,
+  .left-leg {
+    position: absolute;
+  }
+
+  .head {
+    width: 50px;
+    height: 50px;
+    border: 10px solid $bg-color;
+    border-radius: 100%;
+    top: 50px;
+    right: -20px;
+  }
+
+  .body {
+    width: 10px;
+    height: 100px;
+    background-color: $bg-color;
+    top: 100px;
+    right: 0;
+  }
+
+  .right-arm {
+    width: 100px;
+    height: 10px;
+    background-color: $bg-color;
+    top: 125px;
+    right: -100px;
+    transform-origin: left bottom;
+    rotate: -30deg;
+  }
+
+  .right-leg {
+    width: 100px;
+    height: 10px;
+    background-color: $bg-color;
+    top: 190px;
+    right: -90px;
+    transform-origin: left bottom;
+    rotate: 45deg;
+  }
+
+  .left-arm {
+    width: 100px;
+    height: 10px;
+    background-color: $bg-color;
+    top: 125px;
+    right: 5px;
+    transform-origin: right bottom;
+    rotate: 30deg;
+  }
+
+  .left-leg {
+    width: 100px;
+    height: 10px;
+    background-color: $bg-color;
+    top: 190px;
+    right: 0;
+    transform-origin: right bottom;
+    rotate: -45deg;
+  }
+
+  .hanging-tip {
+    width: 10px;
+    height: 50px;
+    background-color: $bg-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .top {
+    height: 10px;
+    width: 200px;
+    background-color: $bg-color;
+    margin-left: 120px;
+  }
+
+  .main {
+    height: 400px;
+    width: 10px;
+    background-color: $bg-color;
+    margin-left: 120px;
+  }
+
+  .base {
+    width: 250px;
+    height: 10px;
+    background-color: $bg-color;
+  }
+}
